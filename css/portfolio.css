@@ -564,6 +564,12 @@ progress[value]{
     .home .image img{
         width: 180px;
     }
+    .home .text-p{
+        width: 80%;
+    }
+    .home .text{
+        width: 100%;
+    }
     .btn{
         width: 50%;
     }
