@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+}
+
+li {
+    cursor: pointer;
+}
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Mulish&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+:root {
+    --primary: #003e8d;
+    --secondary: #edaf20;
+    --text: #f5f5f5;
+    --mainfont: 'Alumni Sans Pinstripe', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+.sticky{
+    position: fixed !important;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    background-color: #758283;
+    z-index: 9999;
+}
+
+.navbar{
+    position: fixed !important;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: 9999;
+    padding: 0% 6% !important;
+}
+
+.logo a img{
+    padding: 12% 0%;
+    width: 160px;
+}
+
+.navbar li a{
+    color: #242B2E;
+}
+
+.navbar li{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 22px;
+    padding: 12px;
+    transition: 0.3s;
+}
+
+.navbar li a{
+    color: #edaf20;
+}
+
+.navbar li a:hover{
+    color: #deeaef;
+}
+
+.login-btn  button{
+    color: #edaf20;
+    border-radius: 50% !important;
+    padding: 12% 12% !important;
+    background-color: transparent;
+    border: 2px solid #deeaef;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 900;
+    transition: 0.3s;
+}
+
+.login-btn button:hover{
+    border: 2px solid #edaf20;
+    color: #f5f5f5;
+}
+
+.section{
+    height: 100vh;
+    width: 106%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 8%;
+    background-image: linear-gradient(#758283 , #242B2E);
+}
+
+.section .span-1{
+    color: #deeaef;
+    border-bottom: 4px solid #f4a500;
+}
+
+.section .span-2{
+    color: #f4a500;
+    border-bottom: 4px solid #deeaef;
+}
+
+.section h1{
+    text-transform: capitalize;
+    font-weight: 700;
+    margin: 4% 0%;
+    font-size: 60px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.section .h-2{
+    margin: 8% 0%;
+}
+
+.section h4{
+    margin: 4% 0% 2% 0%;
+    color: white;
+    font-size: 18px;
+}
+
+.section .btns{
+    height: 130px;
+    display: flex;
+    width: auto;
+    margin: auto;
+}
+
+.section .btns #btn-1{
+    font-weight: 700;
+    font-size: 18px;
+    color: #f4a500;
+    background-color: transparent;
+    align-self: flex-start;
+    padding: 12px 8%;
+    transition: 0.4s;
+    border: 6px solid #f4a500;
+}
+
+.section .btns #btn-1:hover{
+    padding: 4% 8%;
+
+}
+
+.section .btns #btn-2:hover{
+    padding: 4% 8%;
+}
+
+.section .btns #btn-2{
+    font-weight: 700;
+    transition: 0.4s;
+    border: 6px solid #242B2E;
+    font-size: 18px;
+    color: #242B2E;
+    background-color: #f4a500;
+    float: right;
+    padding: 12px 8%;
+    align-self: flex-end;
+}
+
+.section .right{
+    position: relative;
+}
+
+.section .right img{
+    z-index: 999;
+    position: inherit;
+}
+
+.section .element-1{
+    position: absolute;
+    z-index: 9;
+    height: 500px;
+    width: 500px;
+    background-color: #242B2E;
+    border-radius: 50%;
+}
+
+.section .content{
+    display: flex;
+    align-items: center;
+    padding: 0% 6%;
+}
+
+.taste{
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.taste h1{
+    color: #edaf20;
+    margin: 6% 0% 2% 0%;
+    text-transform: capitalize;
+    font-family:cursive;
+    font-weight: 900;
+    font-size: 40px;
+    letter-spacing: -1px;
+    width: 100%;
+}
+
+.taste h2{
+    margin: 0% 10% 0% 0%;
+    font-weight: 900;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 2% 0%;
+}
+
+.taste p{
+    font-weight: 900;
+    margin: 0% 10% 0% 0%;
+    margin: 2% 0%;
+    font-size: 24px;
+    font-family: cursive;
+}
+
+.taste .left img{
+    border: 20px solid white;
+    margin: 0% 0% 0% 10%;
+    width: 500px;
+}
+
+.menu{
+    display: flex;
+    background-color: #ebebeb;
+    justify-content: center;
+    text-align: center;
+}
+
+.menu .content{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.menu h1{
+    color: #edaf20;
+    margin: 2% 0% 12% 0%;
+    text-transform: capitalize;
+    font-family:cursive;
+    font-weight: 900;
+    font-size: 40px;
+    letter-spacing: -1px;
+    width: 100%;   
+}
+
+.menu h2{
+    font-weight: 800;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: rgb(77, 65, 50);
+}
+
+.menu h2 span{
+    color: red;
+    font-family: cursive;
+}
+
+.menu h3{
+    color: rgb(77, 65, 50);
+    text-transform: capitalize;
+    font-family: fantasy;
+    font-size: 20px;
+    margin: 4% 0%;
+}
+
+.menu p{
+    color: rgb(77, 65, 50);
+    font-weight: 900;
+    font-size: 14px;
+}
+
+.menu img{
+    width: 360px;
+}
+
+.menu .quadra{
+    align-self: flex-start;
+    margin-top: -5%;
+}
+
+.services{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    overflow: hidden;
+    background-image: linear-gradient(#758283,#242B2E);
+}
+
+.services h2{
+    color: white;
+    font-family: fantasy;
+    font-size: 22px;
+    text-align: center;
+    margin: 4% 0%;
+}
+
+.services img{
+    margin: 10% auto;
+    display: flex;
+}
+
+.services p{
+    color: white;
+    font-family: cursive;
+    font-size: 14px;
+    text-align: center;
+    margin: 4% 0%;
+}
+
+.footer{
+    position: relative;
+}
+
+footer{
+    background-color: rgb(77, 65, 50);
+    height: 30vh;
+    position: relative;
+}
+
+footer .social{
+    display: flex;
+    margin: 6% 0%;
+    gap: 12px;
+    justify-content: center;
+}
+
+.social i{
+    border-radius: 50%;
+    background-color: white;
+    padding: 22px;
+    color: #edaf20;
+    cursor: pointer;
+    font-size: 28px;
+}
+
+footer p{
+    color: gray;
+    font-size: 20px;
+    text-align: center;
+}
+
+footer a{
+    position: absolute;
+    top: 60%;
+    background-color: #deeaef;
+    color: #edaf20;
+    padding: 18px;
+    font-size: 28px;
+    font-weight: 900;
+    border: none;
+    border-radius: 50%;
+    right: 10%;
+    transition: 0.4s;
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(77, 65, 50);
+}
+
+footer a:hover{
+    background-color: #edaf20;
+}
